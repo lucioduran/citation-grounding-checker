@@ -1,0 +1,4 @@
+{
+  "flan": {"id": "google/flan-t5-small", "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab"},
+  "nli": {"id": "cross-encoder/nli-deberta-v3-xsmall", "revision": "a150876415327c80daeff35ca6f68f5ed8cf5c24"}
+}

@@ -1,0 +1,1505 @@
+{
+  "schema_version": 1,
+  "split": "dev",
+  "revision": "38aae156724daf8eff25dfb67948998df7d65313",
+  "created_utc": "2026-10-21T21:56:09.386086+00:00",
+  "environment": {
+    "python": "3.11.13",
+    "platform": "macOS-26.7.1-x86_64-i386-64bit",
+    "cpu": "Intel(R) Xeon(R) W-3223 CPU @ 3.50GHz",
+    "threads": 2,
+    "seed": 1729,
+    "device": "cpu",
+    "packages": {
+      "torch": "2.2.2",
+      "transformers": "4.46.3",
+      "numpy": "1.26.4",
+      "tokenizers": "0.20.3",
+      "safetensors": "0.4.5",
+      "sentencepiece": "0.2.0",
+      "huggingface-hub": "0.26.2"
+    }
+  },
+  "paid_api_cost_usd": 0,
+  "human_reviews": 0,
+  "hashes": {
+    "data/corpus.json": "9cce1c138bbefbb52c360d9cd2a7eb7839ef5664348d0465b6409314f538e00d",
+    "config/models.json": "563d9481efe672fed989b3468d4993ad41310b899a4efdbacbd0d043d7c315ff",
+    "data/passages/p01.txt": "31bb9b8a5dfcfcf97e00776931ceccfca19201a1020068837b606e2917d5d666",
+    "data/passages/p02.txt": "a670302f3ee5fb803277e8da380d833792c24cca125fe712b5915dd7765e1e10",
+    "data/passages/p03.txt": "4aec37dcf9b5380e5fb88b775019d6cc30d0cacdf7e12340144a58526cc6a48c",
+    "data/passages/p04.txt": "1f0d6abd492cbb157e0db538cc9e0fe550fd97f99e5f5c12a658a0194b4ae267",
+    "data/passages/p05.txt": "aad08253f2d16ad35ca5c2e3cf177c844fa12ba66b40d3137812926b2c5f8d90",
+    "data/passages/p06.txt": "c3e2ce8d5a6d3eb52f76880258822480332c98eb7c1ff757098a7f982a6a8fcf",
+    "data/passages/p07.txt": "0b222076e219fe66037229c1c021a46d4773b431053ca6611b3707fd7a730766",
+    "data/passages/p08.txt": "b4477143a2bb5e5da03862cc72b36275fbfa6d93f053bf530670098c18a40240",
+    "data/passages/p09.txt": "d5e0765cc168d120e54f6bcffa6eede292a3d494aeba990f8354e0ff4ba8fc12",
+    "data/passages/p10.txt": "273490209612b12e72f37ff53a907f207564194caecf367d5537db2b849d5e48",
+    "data/passages/p11.txt": "c303ec412b3341c45819381fa43bbb04467cb75d8cd184a4684ca94ba738a483",
+    "data/passages/p12.txt": "6ff8759da01db2f3d7bfc1263facc7d8ae5a4a4ff6162e6d99e4315344feab25",
+    "data/passages/p13.txt": "ba65686e9f484b70fbfed4ec19ad91bddf624bc8265549314f339284625e1759",
+    "data/passages/p14.txt": "eafdbc0330f65475b367a248669950346c08344a8aff32f260ca76ee24af1547",
+    "data/passages/p15.txt": "68d4dddaa7fcce6294b32181949f4d9b0f2591c1e1872525ad8079913cb77def",
+    "data/passages/p16.txt": "3f902d34e909c0b5adda0b025ac2c5206070e860c0ab66607708c026c58ef094"
+  },
+  "models": {
+    "flan": {
+      "spec": {
+        "id": "google/flan-t5-small",
+        "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab"
+      },
+      "files": {
+        "config.json": "439aa0fecf5a5546a1def68b1fc45e538e2c94528ce805378daf091e2bf6e4de",
+        "generation_config.json": "f5a1c7e2be8092018d8835128987edf0111637dd98e90599cc80310fef75d95a",
+        "model.safetensors": "495fa51e204676f1a857a9fc13c4c89f3f5ba9f480b898cebca02add25e6d749",
+        "special_tokens_map.json": "5c87151ef0f72a99d1f766a4c418bd2a1f90aaa30a8e22fe5eca9641daebb64f",
+        "spiece.model": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+        "tokenizer.json": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a",
+        "tokenizer_config.json": "fcde0f79bffda3688119c94330866a8fbf8de20ae65a8c492c9bd47c704655a0"
+      },
+      "load_seconds": 36.51581269699818
+    },
+    "nli": {
+      "spec": {
+        "id": "cross-encoder/nli-deberta-v3-xsmall",
+        "revision": "a150876415327c80daeff35ca6f68f5ed8cf5c24"
+      },
+      "files": {
+        "added_tokens.json": "a4b6bfe668f2b3cf6f0cd535e98a0663d2d0d4a4a15f13075ad3597d33985a23",
+        "config.json": "8d9f07bf7ba54a6fc3b1962483056f94c39dcf188db4cf61843e1c88f94b2342",
+        "model.safetensors": "4e4fc4977f8d29d2a164255c8f69b9d6c158deeb309bb5e70445b94666ccd9e9",
+        "special_tokens_map.json": "ed7c099c988dbb414b18a6980d20cb57b91b7cd119f6f6941eb364b0e892e712",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer.json": "5124ef2ead1a10a717703bc436de7f353da76d6340e4587719b42b1693707964",
+        "tokenizer_config.json": "f3eecd07c370ef0bf7dd3780d3cd68cf9c8b00c267e21a208ddcd8f82bfec1a6"
+      },
+      "load_seconds": 1.3847022940026363
+    }
+  },
+  "rows": [
+    {
+      "id": "p01-supported",
+      "split": "dev",
+      "category": "exact",
+      "source": "data/passages/p01.txt",
+      "start": 0,
+      "end": 32,
+      "quote": "The Cedar archive opens at noon.",
+      "claim": "The Cedar archive opens at noon.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "supported",
+        "reason": "exact_sentence"
+      },
+      "prediction": "supported",
+      "seconds": 0.00021584299975074828,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p01.txt#L1-L1"
+    },
+    {
+      "id": "p01-contradicted",
+      "split": "dev",
+      "category": "exact",
+      "source": "data/passages/p01.txt",
+      "start": 0,
+      "end": 32,
+      "quote": "The Cedar archive opens at noon.",
+      "claim": "The Cedar archive does not open at noon.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "abstain",
+        "reason": "outside_rule_grammar"
+      },
+      "prediction": "abstain",
+      "seconds": 1.1074997019022703e-05,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p01.txt#L1-L1"
+    },
+    {
+      "id": "p01-insufficient",
+      "split": "dev",
+      "category": "exact",
+      "source": "data/passages/p01.txt",
+      "start": 0,
+      "end": 32,
+      "quote": "The Cedar archive opens at noon.",
+      "claim": "The Cedar archive closes at six.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "abstain",
+        "reason": "outside_rule_grammar"
+      },
+      "prediction": "abstain",
+      "seconds": 8.742004865780473e-06,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p01.txt#L1-L1"
+    },
+    {
+      "id": "p02-supported",
+      "split": "dev",
+      "category": "numeric",
+      "source": "data/passages/p02.txt",
+      "start": 0,
+      "end": 39,
+      "quote": "The Birch tank holds exactly 40 liters.",
+      "claim": "The Birch tank has a capacity of 40 liters.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "abstain",
+        "reason": "outside_rule_grammar"
+      },
+      "prediction": "abstain",
+      "seconds": 9.087998478207737e-06,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p02.txt#L1-L1"
+    },
+    {
+      "id": "p02-contradicted",
+      "split": "dev",
+      "category": "numeric",
+      "source": "data/passages/p02.txt",
+      "start": 0,
+      "end": 39,
+      "quote": "The Birch tank holds exactly 40 liters.",
+      "claim": "The Birch tank holds exactly 60 liters.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "abstain",
+        "reason": "outside_rule_grammar"
+      },
+      "prediction": "abstain",
+      "seconds": 6.311005563475192e-06,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p02.txt#L1-L1"
+    },
+    {
+      "id": "p02-insufficient",
+      "split": "dev",
+      "category": "numeric",
+      "source": "data/passages/p02.txt",
+      "start": 0,
+      "end": 39,
+      "quote": "The Birch tank holds exactly 40 liters.",
+      "claim": "The Birch tank weighs 40 kilograms.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "abstain",
+        "reason": "outside_rule_grammar"
+      },
+      "prediction": "abstain",
+      "seconds": 5.588997737504542e-06,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p02.txt#L1-L1"
+    },
+    {
+      "id": "p03-supported",
+      "split": "dev",
+      "category": "scope",
+      "source": "data/passages/p03.txt",
+      "start": 0,
+      "end": 35,
+      "quote": "Only staff may enter the Elm vault.",
+      "claim": "Visitors may not enter the Elm vault.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "abstain",
+        "reason": "outside_rule_grammar"
+      },
+      "prediction": "abstain",
+      "seconds": 5.344998498912901e-06,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p03.txt#L1-L1"
+    },
+    {
+      "id": "p03-contradicted",
+      "split": "dev",
+      "category": "scope",
+      "source": "data/passages/p03.txt",
+      "start": 0,
+      "end": 35,
+      "quote": "Only staff may enter the Elm vault.",
+      "claim": "Visitors may enter the Elm vault.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "abstain",
+        "reason": "outside_rule_grammar"
+      },
+      "prediction": "abstain",
+      "seconds": 7.0549940573982894e-06,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p03.txt#L1-L1"
+    },
+    {
+      "id": "p03-insufficient",
+      "split": "dev",
+      "category": "scope",
+      "source": "data/passages/p03.txt",
+      "start": 0,
+      "end": 35,
+      "quote": "Only staff may enter the Elm vault.",
+      "claim": "Staff enter the Elm vault every day.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "abstain",
+        "reason": "outside_rule_grammar"
+      },
+      "prediction": "abstain",
+      "seconds": 5.608002538792789e-06,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p03.txt#L1-L1"
+    },
+    {
+      "id": "p04-supported",
+      "split": "dev",
+      "category": "missing",
+      "source": "data/passages/p04.txt",
+      "start": 0,
+      "end": 31,
+      "quote": "The Pine ferry is painted blue.",
+      "claim": "The Pine ferry has blue paint.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "abstain",
+        "reason": "outside_rule_grammar"
+      },
+      "prediction": "abstain",
+      "seconds": 5.034999048803002e-06,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p04.txt#L1-L1"
+    },
+    {
+      "id": "p04-contradicted",
+      "split": "dev",
+      "category": "missing",
+      "source": "data/passages/p04.txt",
+      "start": 0,
+      "end": 31,
+      "quote": "The Pine ferry is painted blue.",
+      "claim": "The Pine ferry has no blue paint.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "abstain",
+        "reason": "outside_rule_grammar"
+      },
+      "prediction": "abstain",
+      "seconds": 4.697001713793725e-06,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p04.txt#L1-L1"
+    },
+    {
+      "id": "p04-insufficient",
+      "split": "dev",
+      "category": "missing",
+      "source": "data/passages/p04.txt",
+      "start": 0,
+      "end": 31,
+      "quote": "The Pine ferry is painted blue.",
+      "claim": "The Pine ferry carries 30 people.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "deterministic",
+      "result": {
+        "prediction": "abstain",
+        "reason": "outside_rule_grammar"
+      },
+      "prediction": "abstain",
+      "seconds": 4.765999619849026e-06,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p04.txt#L1-L1"
+    },
+    {
+      "id": "p01-supported",
+      "split": "dev",
+      "category": "exact",
+      "source": "data/passages/p01.txt",
+      "start": 0,
+      "end": 32,
+      "quote": "The Cedar archive opens at noon.",
+      "claim": "The Cedar archive opens at noon.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "flan",
+      "result": {
+        "prediction": "supported",
+        "raw": "supported",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: The Cedar archive opens at noon.\nClaim: The Cedar archive opens at noon.\nLabel:",
+        "input_tokens": 79
+      },
+      "prediction": "supported",
+      "seconds": 3.3717820789970574,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p01.txt#L1-L1"
+    },
+    {
+      "id": "p01-contradicted",
+      "split": "dev",
+      "category": "exact",
+      "source": "data/passages/p01.txt",
+      "start": 0,
+      "end": 32,
+      "quote": "The Cedar archive opens at noon.",
+      "claim": "The Cedar archive does not open at noon.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "flan",
+      "result": {
+        "prediction": "contradicted",
+        "raw": "contradicted",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: The Cedar archive opens at noon.\nClaim: The Cedar archive does not open at noon.\nLabel:",
+        "input_tokens": 81
+      },
+      "prediction": "contradicted",
+      "seconds": 0.0948417910040007,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p01.txt#L1-L1"
+    },
+    {
+      "id": "p01-insufficient",
+      "split": "dev",
+      "category": "exact",
+      "source": "data/passages/p01.txt",
+      "start": 0,
+      "end": 32,
+      "quote": "The Cedar archive opens at noon.",
+      "claim": "The Cedar archive closes at six.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "flan",
+      "result": {
+        "prediction": "insufficient",
+        "raw": "insufficient",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: The Cedar archive opens at noon.\nClaim: The Cedar archive closes at six.\nLabel:",
+        "input_tokens": 80
+      },
+      "prediction": "insufficient",
+      "seconds": 0.08260922499903245,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p01.txt#L1-L1"
+    },
+    {
+      "id": "p02-supported",
+      "split": "dev",
+      "category": "numeric",
+      "source": "data/passages/p02.txt",
+      "start": 0,
+      "end": 39,
+      "quote": "The Birch tank holds exactly 40 liters.",
+      "claim": "The Birch tank has a capacity of 40 liters.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "flan",
+      "result": {
+        "prediction": "supported",
+        "raw": "supported",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: The Birch tank holds exactly 40 liters.\nClaim: The Birch tank has a capacity of 40 liters.\nLabel:",
+        "input_tokens": 90
+      },
+      "prediction": "supported",
+      "seconds": 0.07129377100500278,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p02.txt#L1-L1"
+    },
+    {
+      "id": "p02-contradicted",
+      "split": "dev",
+      "category": "numeric",
+      "source": "data/passages/p02.txt",
+      "start": 0,
+      "end": 39,
+      "quote": "The Birch tank holds exactly 40 liters.",
+      "claim": "The Birch tank holds exactly 60 liters.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "flan",
+      "result": {
+        "prediction": "supported",
+        "raw": "supported",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: The Birch tank holds exactly 40 liters.\nClaim: The Birch tank holds exactly 60 liters.\nLabel:",
+        "input_tokens": 87
+      },
+      "prediction": "supported",
+      "seconds": 0.05793149899545824,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p02.txt#L1-L1"
+    },
+    {
+      "id": "p02-insufficient",
+      "split": "dev",
+      "category": "numeric",
+      "source": "data/passages/p02.txt",
+      "start": 0,
+      "end": 39,
+      "quote": "The Birch tank holds exactly 40 liters.",
+      "claim": "The Birch tank weighs 40 kilograms.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "flan",
+      "result": {
+        "prediction": "contradicted",
+        "raw": "contradicted",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: The Birch tank holds exactly 40 liters.\nClaim: The Birch tank weighs 40 kilograms.\nLabel:",
+        "input_tokens": 86
+      },
+      "prediction": "contradicted",
+      "seconds": 0.08659979199728696,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p02.txt#L1-L1"
+    },
+    {
+      "id": "p03-supported",
+      "split": "dev",
+      "category": "scope",
+      "source": "data/passages/p03.txt",
+      "start": 0,
+      "end": 35,
+      "quote": "Only staff may enter the Elm vault.",
+      "claim": "Visitors may not enter the Elm vault.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "flan",
+      "result": {
+        "prediction": "contradicted",
+        "raw": "contradicted",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: Only staff may enter the Elm vault.\nClaim: Visitors may not enter the Elm vault.\nLabel:",
+        "input_tokens": 83
+      },
+      "prediction": "contradicted",
+      "seconds": 0.10218185700068716,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p03.txt#L1-L1"
+    },
+    {
+      "id": "p03-contradicted",
+      "split": "dev",
+      "category": "scope",
+      "source": "data/passages/p03.txt",
+      "start": 0,
+      "end": 35,
+      "quote": "Only staff may enter the Elm vault.",
+      "claim": "Visitors may enter the Elm vault.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "flan",
+      "result": {
+        "prediction": "supported",
+        "raw": "supported",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: Only staff may enter the Elm vault.\nClaim: Visitors may enter the Elm vault.\nLabel:",
+        "input_tokens": 82
+      },
+      "prediction": "supported",
+      "seconds": 0.08031194099748973,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p03.txt#L1-L1"
+    },
+    {
+      "id": "p03-insufficient",
+      "split": "dev",
+      "category": "scope",
+      "source": "data/passages/p03.txt",
+      "start": 0,
+      "end": 35,
+      "quote": "Only staff may enter the Elm vault.",
+      "claim": "Staff enter the Elm vault every day.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "flan",
+      "result": {
+        "prediction": "contradicted",
+        "raw": "contradicted",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: Only staff may enter the Elm vault.\nClaim: Staff enter the Elm vault every day.\nLabel:",
+        "input_tokens": 83
+      },
+      "prediction": "contradicted",
+      "seconds": 0.08689285699801985,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p03.txt#L1-L1"
+    },
+    {
+      "id": "p04-supported",
+      "split": "dev",
+      "category": "missing",
+      "source": "data/passages/p04.txt",
+      "start": 0,
+      "end": 31,
+      "quote": "The Pine ferry is painted blue.",
+      "claim": "The Pine ferry has blue paint.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "flan",
+      "result": {
+        "prediction": "supported",
+        "raw": "supported",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: The Pine ferry is painted blue.\nClaim: The Pine ferry has blue paint.\nLabel:",
+        "input_tokens": 79
+      },
+      "prediction": "supported",
+      "seconds": 0.07448444500187179,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p04.txt#L1-L1"
+    },
+    {
+      "id": "p04-contradicted",
+      "split": "dev",
+      "category": "missing",
+      "source": "data/passages/p04.txt",
+      "start": 0,
+      "end": 31,
+      "quote": "The Pine ferry is painted blue.",
+      "claim": "The Pine ferry has no blue paint.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "flan",
+      "result": {
+        "prediction": "contradicted",
+        "raw": "contradicted",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: The Pine ferry is painted blue.\nClaim: The Pine ferry has no blue paint.\nLabel:",
+        "input_tokens": 80
+      },
+      "prediction": "contradicted",
+      "seconds": 0.08553071499773068,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p04.txt#L1-L1"
+    },
+    {
+      "id": "p04-insufficient",
+      "split": "dev",
+      "category": "missing",
+      "source": "data/passages/p04.txt",
+      "start": 0,
+      "end": 31,
+      "quote": "The Pine ferry is painted blue.",
+      "claim": "The Pine ferry carries 30 people.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "flan",
+      "result": {
+        "prediction": "insufficient",
+        "raw": "insufficient",
+        "prompt": "Classify the claim using only the passage. Reply with exactly one label: supported, contradicted, or insufficient. Supported means the passage entails the claim. Contradicted means it entails the opposite. Insufficient means neither.\nPassage: The Pine ferry is painted blue.\nClaim: The Pine ferry carries 30 people.\nLabel:",
+        "input_tokens": 80
+      },
+      "prediction": "insufficient",
+      "seconds": 0.0790055850011413,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p04.txt#L1-L1"
+    },
+    {
+      "id": "p01-supported",
+      "split": "dev",
+      "category": "exact",
+      "source": "data/passages/p01.txt",
+      "start": 0,
+      "end": 32,
+      "quote": "The Cedar archive opens at noon.",
+      "claim": "The Cedar archive opens at noon.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "nli",
+      "result": {
+        "prediction": "supported",
+        "probabilities": [
+          0.0006810698541812599,
+          0.9938341379165649,
+          0.005484710913151503
+        ],
+        "input_tokens": 17
+      },
+      "prediction": "supported",
+      "seconds": 0.09428175300126895,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p01.txt#L1-L1"
+    },
+    {
+      "id": "p01-contradicted",
+      "split": "dev",
+      "category": "exact",
+      "source": "data/passages/p01.txt",
+      "start": 0,
+      "end": 32,
+      "quote": "The Cedar archive opens at noon.",
+      "claim": "The Cedar archive does not open at noon.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "nli",
+      "result": {
+        "prediction": "contradicted",
+        "probabilities": [
+          0.9977275729179382,
+          0.0006955671706236899,
+          0.001576912123709917
+        ],
+        "input_tokens": 19
+      },
+      "prediction": "contradicted",
+      "seconds": 0.06103443000029074,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p01.txt#L1-L1"
+    },
+    {
+      "id": "p01-insufficient",
+      "split": "dev",
+      "category": "exact",
+      "source": "data/passages/p01.txt",
+      "start": 0,
+      "end": 32,
+      "quote": "The Cedar archive opens at noon.",
+      "claim": "The Cedar archive closes at six.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "nli",
+      "result": {
+        "prediction": "contradicted",
+        "probabilities": [
+          0.9706816077232361,
+          0.00023557044914923608,
+          0.029082806780934334
+        ],
+        "input_tokens": 17
+      },
+      "prediction": "contradicted",
+      "seconds": 0.049979972005530726,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p01.txt#L1-L1"
+    },
+    {
+      "id": "p02-supported",
+      "split": "dev",
+      "category": "numeric",
+      "source": "data/passages/p02.txt",
+      "start": 0,
+      "end": 39,
+      "quote": "The Birch tank holds exactly 40 liters.",
+      "claim": "The Birch tank has a capacity of 40 liters.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "nli",
+      "result": {
+        "prediction": "supported",
+        "probabilities": [
+          0.0004262048751115799,
+          0.9954652190208435,
+          0.004108530469238758
+        ],
+        "input_tokens": 21
+      },
+      "prediction": "supported",
+      "seconds": 0.05270361799921375,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p02.txt#L1-L1"
+    },
+    {
+      "id": "p02-contradicted",
+      "split": "dev",
+      "category": "numeric",
+      "source": "data/passages/p02.txt",
+      "start": 0,
+      "end": 39,
+      "quote": "The Birch tank holds exactly 40 liters.",
+      "claim": "The Birch tank holds exactly 60 liters.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "nli",
+      "result": {
+        "prediction": "contradicted",
+        "probabilities": [
+          0.9981215596199036,
+          0.0004901812644675374,
+          0.0013882516650483012
+        ],
+        "input_tokens": 19
+      },
+      "prediction": "contradicted",
+      "seconds": 0.06055808599921875,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p02.txt#L1-L1"
+    },
+    {
+      "id": "p02-insufficient",
+      "split": "dev",
+      "category": "numeric",
+      "source": "data/passages/p02.txt",
+      "start": 0,
+      "end": 39,
+      "quote": "The Birch tank holds exactly 40 liters.",
+      "claim": "The Birch tank weighs 40 kilograms.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "nli",
+      "result": {
+        "prediction": "contradicted",
+        "probabilities": [
+          0.8764339685440063,
+          0.009109838865697384,
+          0.1144561842083931
+        ],
+        "input_tokens": 18
+      },
+      "prediction": "contradicted",
+      "seconds": 0.06000505600241013,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p02.txt#L1-L1"
+    },
+    {
+      "id": "p03-supported",
+      "split": "dev",
+      "category": "scope",
+      "source": "data/passages/p03.txt",
+      "start": 0,
+      "end": 35,
+      "quote": "Only staff may enter the Elm vault.",
+      "claim": "Visitors may not enter the Elm vault.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "nli",
+      "result": {
+        "prediction": "supported",
+        "probabilities": [
+          0.0010854694992303848,
+          0.9756717085838318,
+          0.02324279211461544
+        ],
+        "input_tokens": 19
+      },
+      "prediction": "supported",
+      "seconds": 0.061210220999782905,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p03.txt#L1-L1"
+    },
+    {
+      "id": "p03-contradicted",
+      "split": "dev",
+      "category": "scope",
+      "source": "data/passages/p03.txt",
+      "start": 0,
+      "end": 35,
+      "quote": "Only staff may enter the Elm vault.",
+      "claim": "Visitors may enter the Elm vault.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "nli",
+      "result": {
+        "prediction": "contradicted",
+        "probabilities": [
+          0.986674964427948,
+          0.005740056745707989,
+          0.007585001643747091
+        ],
+        "input_tokens": 18
+      },
+      "prediction": "contradicted",
+      "seconds": 0.0575567760024569,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p03.txt#L1-L1"
+    },
+    {
+      "id": "p03-insufficient",
+      "split": "dev",
+      "category": "scope",
+      "source": "data/passages/p03.txt",
+      "start": 0,
+      "end": 35,
+      "quote": "Only staff may enter the Elm vault.",
+      "claim": "Staff enter the Elm vault every day.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "nli",
+      "result": {
+        "prediction": "insufficient",
+        "probabilities": [
+          0.002710927277803421,
+          0.0017426162958145142,
+          0.9955464601516724
+        ],
+        "input_tokens": 19
+      },
+      "prediction": "insufficient",
+      "seconds": 0.05158650600060355,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p03.txt#L1-L1"
+    },
+    {
+      "id": "p04-supported",
+      "split": "dev",
+      "category": "missing",
+      "source": "data/passages/p04.txt",
+      "start": 0,
+      "end": 31,
+      "quote": "The Pine ferry is painted blue.",
+      "claim": "The Pine ferry has blue paint.",
+      "label": "supported",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the claim.",
+      "method": "nli",
+      "result": {
+        "prediction": "supported",
+        "probabilities": [
+          0.00040526193333789706,
+          0.9953312277793884,
+          0.004263389389961958
+        ],
+        "input_tokens": 17
+      },
+      "prediction": "supported",
+      "seconds": 0.054656156004057266,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p04.txt#L1-L1"
+    },
+    {
+      "id": "p04-contradicted",
+      "split": "dev",
+      "category": "missing",
+      "source": "data/passages/p04.txt",
+      "start": 0,
+      "end": 31,
+      "quote": "The Pine ferry is painted blue.",
+      "claim": "The Pine ferry has no blue paint.",
+      "label": "contradicted",
+      "label_origin": "synthetic_reference",
+      "rationale": "The cited passage entails the denial of the claim.",
+      "method": "nli",
+      "result": {
+        "prediction": "contradicted",
+        "probabilities": [
+          0.9979609251022339,
+          0.0005667231744155288,
+          0.0014723679050803185
+        ],
+        "input_tokens": 18
+      },
+      "prediction": "contradicted",
+      "seconds": 0.0502409879991319,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p04.txt#L1-L1"
+    },
+    {
+      "id": "p04-insufficient",
+      "split": "dev",
+      "category": "missing",
+      "source": "data/passages/p04.txt",
+      "start": 0,
+      "end": 31,
+      "quote": "The Pine ferry is painted blue.",
+      "claim": "The Pine ferry carries 30 people.",
+      "label": "insufficient",
+      "label_origin": "synthetic_reference",
+      "rationale": "The passage does not establish the claim or its denial.",
+      "method": "nli",
+      "result": {
+        "prediction": "insufficient",
+        "probabilities": [
+          0.0008162069134414196,
+          0.00039228235254995525,
+          0.998791515827179
+        ],
+        "input_tokens": 17
+      },
+      "prediction": "insufficient",
+      "seconds": 0.05114809999940917,
+      "passage_url": "https://github.com/lucioduran/citation-grounding-checker/blob/38aae156724daf8eff25dfb67948998df7d65313/data/passages/p04.txt#L1-L1"
+    }
+  ],
+  "summary": {
+    "deterministic": {
+      "overall": {
+        "n": 12,
+        "correct": 1,
+        "abstentions": 11,
+        "accuracy": 0.08333333333333333,
+        "coverage": 0.08333333333333337,
+        "selective_accuracy": 1.0,
+        "confusion": {
+          "supported": {
+            "supported": 1,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 3
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 4
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 4
+          }
+        },
+        "precision": {
+          "supported": 1.0,
+          "contradicted": null,
+          "insufficient": null
+        },
+        "recall": {
+          "supported": 0.25,
+          "contradicted": 0.0,
+          "insufficient": 0.0
+        }
+      },
+      "categories": {
+        "exact": {
+          "n": 3,
+          "correct": 1,
+          "abstentions": 2,
+          "accuracy": 0.3333333333333333,
+          "coverage": 0.33333333333333337,
+          "selective_accuracy": 1.0,
+          "confusion": {
+            "supported": {
+              "supported": 1,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 1
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 1
+            }
+          },
+          "precision": {
+            "supported": 1.0,
+            "contradicted": null,
+            "insufficient": null
+          },
+          "recall": {
+            "supported": 1.0,
+            "contradicted": 0.0,
+            "insufficient": 0.0
+          }
+        },
+        "missing": {
+          "n": 3,
+          "correct": 0,
+          "abstentions": 3,
+          "accuracy": 0.0,
+          "coverage": 0.0,
+          "selective_accuracy": null,
+          "confusion": {
+            "supported": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 1
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 1
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 1
+            }
+          },
+          "precision": {
+            "supported": null,
+            "contradicted": null,
+            "insufficient": null
+          },
+          "recall": {
+            "supported": 0.0,
+            "contradicted": 0.0,
+            "insufficient": 0.0
+          }
+        },
+        "numeric": {
+          "n": 3,
+          "correct": 0,
+          "abstentions": 3,
+          "accuracy": 0.0,
+          "coverage": 0.0,
+          "selective_accuracy": null,
+          "confusion": {
+            "supported": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 1
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 1
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 1
+            }
+          },
+          "precision": {
+            "supported": null,
+            "contradicted": null,
+            "insufficient": null
+          },
+          "recall": {
+            "supported": 0.0,
+            "contradicted": 0.0,
+            "insufficient": 0.0
+          }
+        },
+        "scope": {
+          "n": 3,
+          "correct": 0,
+          "abstentions": 3,
+          "accuracy": 0.0,
+          "coverage": 0.0,
+          "selective_accuracy": null,
+          "confusion": {
+            "supported": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 1
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 1
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 1
+            }
+          },
+          "precision": {
+            "supported": null,
+            "contradicted": null,
+            "insufficient": null
+          },
+          "recall": {
+            "supported": 0.0,
+            "contradicted": 0.0,
+            "insufficient": 0.0
+          }
+        }
+      }
+    },
+    "flan": {
+      "overall": {
+        "n": 12,
+        "correct": 7,
+        "abstentions": 0,
+        "accuracy": 0.5833333333333334,
+        "coverage": 1.0,
+        "selective_accuracy": 0.5833333333333334,
+        "confusion": {
+          "supported": {
+            "supported": 3,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "contradicted": {
+            "supported": 2,
+            "contradicted": 2,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 2,
+            "insufficient": 2,
+            "abstain": 0
+          }
+        },
+        "precision": {
+          "supported": 0.6,
+          "contradicted": 0.4,
+          "insufficient": 1.0
+        },
+        "recall": {
+          "supported": 0.75,
+          "contradicted": 0.5,
+          "insufficient": 0.5
+        }
+      },
+      "categories": {
+        "exact": {
+          "n": 3,
+          "correct": 3,
+          "abstentions": 0,
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "selective_accuracy": 1.0,
+          "confusion": {
+            "supported": {
+              "supported": 1,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 1,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 1,
+              "abstain": 0
+            }
+          },
+          "precision": {
+            "supported": 1.0,
+            "contradicted": 1.0,
+            "insufficient": 1.0
+          },
+          "recall": {
+            "supported": 1.0,
+            "contradicted": 1.0,
+            "insufficient": 1.0
+          }
+        },
+        "missing": {
+          "n": 3,
+          "correct": 3,
+          "abstentions": 0,
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "selective_accuracy": 1.0,
+          "confusion": {
+            "supported": {
+              "supported": 1,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 1,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 1,
+              "abstain": 0
+            }
+          },
+          "precision": {
+            "supported": 1.0,
+            "contradicted": 1.0,
+            "insufficient": 1.0
+          },
+          "recall": {
+            "supported": 1.0,
+            "contradicted": 1.0,
+            "insufficient": 1.0
+          }
+        },
+        "numeric": {
+          "n": 3,
+          "correct": 1,
+          "abstentions": 0,
+          "accuracy": 0.3333333333333333,
+          "coverage": 1.0,
+          "selective_accuracy": 0.3333333333333333,
+          "confusion": {
+            "supported": {
+              "supported": 1,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 1,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 1,
+              "insufficient": 0,
+              "abstain": 0
+            }
+          },
+          "precision": {
+            "supported": 0.5,
+            "contradicted": 0.0,
+            "insufficient": null
+          },
+          "recall": {
+            "supported": 1.0,
+            "contradicted": 0.0,
+            "insufficient": 0.0
+          }
+        },
+        "scope": {
+          "n": 3,
+          "correct": 0,
+          "abstentions": 0,
+          "accuracy": 0.0,
+          "coverage": 1.0,
+          "selective_accuracy": 0.0,
+          "confusion": {
+            "supported": {
+              "supported": 0,
+              "contradicted": 1,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 1,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 1,
+              "insufficient": 0,
+              "abstain": 0
+            }
+          },
+          "precision": {
+            "supported": 0.0,
+            "contradicted": 0.0,
+            "insufficient": null
+          },
+          "recall": {
+            "supported": 0.0,
+            "contradicted": 0.0,
+            "insufficient": 0.0
+          }
+        }
+      }
+    },
+    "nli": {
+      "overall": {
+        "n": 12,
+        "correct": 10,
+        "abstentions": 0,
+        "accuracy": 0.8333333333333334,
+        "coverage": 1.0,
+        "selective_accuracy": 0.8333333333333334,
+        "confusion": {
+          "supported": {
+            "supported": 4,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 4,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 2,
+            "insufficient": 2,
+            "abstain": 0
+          }
+        },
+        "precision": {
+          "supported": 1.0,
+          "contradicted": 0.6666666666666666,
+          "insufficient": 1.0
+        },
+        "recall": {
+          "supported": 1.0,
+          "contradicted": 1.0,
+          "insufficient": 0.5
+        }
+      },
+      "categories": {
+        "exact": {
+          "n": 3,
+          "correct": 2,
+          "abstentions": 0,
+          "accuracy": 0.6666666666666666,
+          "coverage": 1.0,
+          "selective_accuracy": 0.6666666666666666,
+          "confusion": {
+            "supported": {
+              "supported": 1,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 1,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 1,
+              "insufficient": 0,
+              "abstain": 0
+            }
+          },
+          "precision": {
+            "supported": 1.0,
+            "contradicted": 0.5,
+            "insufficient": null
+          },
+          "recall": {
+            "supported": 1.0,
+            "contradicted": 1.0,
+            "insufficient": 0.0
+          }
+        },
+        "missing": {
+          "n": 3,
+          "correct": 3,
+          "abstentions": 0,
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "selective_accuracy": 1.0,
+          "confusion": {
+            "supported": {
+              "supported": 1,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 1,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 1,
+              "abstain": 0
+            }
+          },
+          "precision": {
+            "supported": 1.0,
+            "contradicted": 1.0,
+            "insufficient": 1.0
+          },
+          "recall": {
+            "supported": 1.0,
+            "contradicted": 1.0,
+            "insufficient": 1.0
+          }
+        },
+        "numeric": {
+          "n": 3,
+          "correct": 2,
+          "abstentions": 0,
+          "accuracy": 0.6666666666666666,
+          "coverage": 1.0,
+          "selective_accuracy": 0.6666666666666666,
+          "confusion": {
+            "supported": {
+              "supported": 1,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 1,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 1,
+              "insufficient": 0,
+              "abstain": 0
+            }
+          },
+          "precision": {
+            "supported": 1.0,
+            "contradicted": 0.5,
+            "insufficient": null
+          },
+          "recall": {
+            "supported": 1.0,
+            "contradicted": 1.0,
+            "insufficient": 0.0
+          }
+        },
+        "scope": {
+          "n": 3,
+          "correct": 3,
+          "abstentions": 0,
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "selective_accuracy": 1.0,
+          "confusion": {
+            "supported": {
+              "supported": 1,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 1,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 1,
+              "abstain": 0
+            }
+          },
+          "precision": {
+            "supported": 1.0,
+            "contradicted": 1.0,
+            "insufficient": 1.0
+          },
+          "recall": {
+            "supported": 1.0,
+            "contradicted": 1.0,
+            "insufficient": 1.0
+          }
+        }
+      }
+    }
+  }
+}

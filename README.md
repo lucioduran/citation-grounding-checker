@@ -81,6 +81,14 @@ Frozen settings: seed 1729, two CPU threads, 384 input tokens with no truncation
 
 ## Results
 
+Measured on the Intel Xeon W-3223 with two CPU threads:
+
+| Method | Correct / 36 | Abstentions / 36 | Supported precision | Contradicted precision | Insufficient precision |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| deterministic | 3 | 33 | 1.000 | 1.000 | n/a |
+| flan | 21 | 0 | 0.500 | 0.583 | 0.833 |
+| nli | 31 | 1 | 0.923 | 0.800 | 1.000 |
+
 Results are recorded in [development evidence](results/dev/report.json) and [evaluation evidence](results/eval/report.json). See [category metrics and error analysis](docs/results.md) for every category and exact passage links.
 
 ## Testing

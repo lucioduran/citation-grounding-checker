@@ -1,0 +1,584 @@
+{
+  "deterministic": {
+    "overall": {
+      "n": 12,
+      "correct": 1,
+      "abstentions": 11,
+      "accuracy": 0.08333333333333333,
+      "coverage": 0.08333333333333337,
+      "selective_accuracy": 1.0,
+      "confusion": {
+        "supported": {
+          "supported": 1,
+          "contradicted": 0,
+          "insufficient": 0,
+          "abstain": 3
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 0,
+          "insufficient": 0,
+          "abstain": 4
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 0,
+          "insufficient": 0,
+          "abstain": 4
+        }
+      },
+      "precision": {
+        "supported": 1.0,
+        "contradicted": null,
+        "insufficient": null
+      },
+      "recall": {
+        "supported": 0.25,
+        "contradicted": 0.0,
+        "insufficient": 0.0
+      }
+    },
+    "categories": {
+      "exact": {
+        "n": 3,
+        "correct": 1,
+        "abstentions": 2,
+        "accuracy": 0.3333333333333333,
+        "coverage": 0.33333333333333337,
+        "selective_accuracy": 1.0,
+        "confusion": {
+          "supported": {
+            "supported": 1,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 1
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 1
+          }
+        },
+        "precision": {
+          "supported": 1.0,
+          "contradicted": null,
+          "insufficient": null
+        },
+        "recall": {
+          "supported": 1.0,
+          "contradicted": 0.0,
+          "insufficient": 0.0
+        }
+      },
+      "missing": {
+        "n": 3,
+        "correct": 0,
+        "abstentions": 3,
+        "accuracy": 0.0,
+        "coverage": 0.0,
+        "selective_accuracy": null,
+        "confusion": {
+          "supported": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 1
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 1
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 1
+          }
+        },
+        "precision": {
+          "supported": null,
+          "contradicted": null,
+          "insufficient": null
+        },
+        "recall": {
+          "supported": 0.0,
+          "contradicted": 0.0,
+          "insufficient": 0.0
+        }
+      },
+      "numeric": {
+        "n": 3,
+        "correct": 0,
+        "abstentions": 3,
+        "accuracy": 0.0,
+        "coverage": 0.0,
+        "selective_accuracy": null,
+        "confusion": {
+          "supported": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 1
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 1
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 1
+          }
+        },
+        "precision": {
+          "supported": null,
+          "contradicted": null,
+          "insufficient": null
+        },
+        "recall": {
+          "supported": 0.0,
+          "contradicted": 0.0,
+          "insufficient": 0.0
+        }
+      },
+      "scope": {
+        "n": 3,
+        "correct": 0,
+        "abstentions": 3,
+        "accuracy": 0.0,
+        "coverage": 0.0,
+        "selective_accuracy": null,
+        "confusion": {
+          "supported": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 1
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 1
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 1
+          }
+        },
+        "precision": {
+          "supported": null,
+          "contradicted": null,
+          "insufficient": null
+        },
+        "recall": {
+          "supported": 0.0,
+          "contradicted": 0.0,
+          "insufficient": 0.0
+        }
+      }
+    }
+  },
+  "flan": {
+    "overall": {
+      "n": 12,
+      "correct": 7,
+      "abstentions": 0,
+      "accuracy": 0.5833333333333334,
+      "coverage": 1.0,
+      "selective_accuracy": 0.5833333333333334,
+      "confusion": {
+        "supported": {
+          "supported": 3,
+          "contradicted": 1,
+          "insufficient": 0,
+          "abstain": 0
+        },
+        "contradicted": {
+          "supported": 2,
+          "contradicted": 2,
+          "insufficient": 0,
+          "abstain": 0
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 2,
+          "insufficient": 2,
+          "abstain": 0
+        }
+      },
+      "precision": {
+        "supported": 0.6,
+        "contradicted": 0.4,
+        "insufficient": 1.0
+      },
+      "recall": {
+        "supported": 0.75,
+        "contradicted": 0.5,
+        "insufficient": 0.5
+      }
+    },
+    "categories": {
+      "exact": {
+        "n": 3,
+        "correct": 3,
+        "abstentions": 0,
+        "accuracy": 1.0,
+        "coverage": 1.0,
+        "selective_accuracy": 1.0,
+        "confusion": {
+          "supported": {
+            "supported": 1,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 1,
+            "abstain": 0
+          }
+        },
+        "precision": {
+          "supported": 1.0,
+          "contradicted": 1.0,
+          "insufficient": 1.0
+        },
+        "recall": {
+          "supported": 1.0,
+          "contradicted": 1.0,
+          "insufficient": 1.0
+        }
+      },
+      "missing": {
+        "n": 3,
+        "correct": 3,
+        "abstentions": 0,
+        "accuracy": 1.0,
+        "coverage": 1.0,
+        "selective_accuracy": 1.0,
+        "confusion": {
+          "supported": {
+            "supported": 1,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 1,
+            "abstain": 0
+          }
+        },
+        "precision": {
+          "supported": 1.0,
+          "contradicted": 1.0,
+          "insufficient": 1.0
+        },
+        "recall": {
+          "supported": 1.0,
+          "contradicted": 1.0,
+          "insufficient": 1.0
+        }
+      },
+      "numeric": {
+        "n": 3,
+        "correct": 1,
+        "abstentions": 0,
+        "accuracy": 0.3333333333333333,
+        "coverage": 1.0,
+        "selective_accuracy": 0.3333333333333333,
+        "confusion": {
+          "supported": {
+            "supported": 1,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "contradicted": {
+            "supported": 1,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          }
+        },
+        "precision": {
+          "supported": 0.5,
+          "contradicted": 0.0,
+          "insufficient": null
+        },
+        "recall": {
+          "supported": 1.0,
+          "contradicted": 0.0,
+          "insufficient": 0.0
+        }
+      },
+      "scope": {
+        "n": 3,
+        "correct": 0,
+        "abstentions": 0,
+        "accuracy": 0.0,
+        "coverage": 1.0,
+        "selective_accuracy": 0.0,
+        "confusion": {
+          "supported": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "contradicted": {
+            "supported": 1,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          }
+        },
+        "precision": {
+          "supported": 0.0,
+          "contradicted": 0.0,
+          "insufficient": null
+        },
+        "recall": {
+          "supported": 0.0,
+          "contradicted": 0.0,
+          "insufficient": 0.0
+        }
+      }
+    }
+  },
+  "nli": {
+    "overall": {
+      "n": 12,
+      "correct": 10,
+      "abstentions": 0,
+      "accuracy": 0.8333333333333334,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8333333333333334,
+      "confusion": {
+        "supported": {
+          "supported": 4,
+          "contradicted": 0,
+          "insufficient": 0,
+          "abstain": 0
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 4,
+          "insufficient": 0,
+          "abstain": 0
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 2,
+          "insufficient": 2,
+          "abstain": 0
+        }
+      },
+      "precision": {
+        "supported": 1.0,
+        "contradicted": 0.6666666666666666,
+        "insufficient": 1.0
+      },
+      "recall": {
+        "supported": 1.0,
+        "contradicted": 1.0,
+        "insufficient": 0.5
+      }
+    },
+    "categories": {
+      "exact": {
+        "n": 3,
+        "correct": 2,
+        "abstentions": 0,
+        "accuracy": 0.6666666666666666,
+        "coverage": 1.0,
+        "selective_accuracy": 0.6666666666666666,
+        "confusion": {
+          "supported": {
+            "supported": 1,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          }
+        },
+        "precision": {
+          "supported": 1.0,
+          "contradicted": 0.5,
+          "insufficient": null
+        },
+        "recall": {
+          "supported": 1.0,
+          "contradicted": 1.0,
+          "insufficient": 0.0
+        }
+      },
+      "missing": {
+        "n": 3,
+        "correct": 3,
+        "abstentions": 0,
+        "accuracy": 1.0,
+        "coverage": 1.0,
+        "selective_accuracy": 1.0,
+        "confusion": {
+          "supported": {
+            "supported": 1,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 1,
+            "abstain": 0
+          }
+        },
+        "precision": {
+          "supported": 1.0,
+          "contradicted": 1.0,
+          "insufficient": 1.0
+        },
+        "recall": {
+          "supported": 1.0,
+          "contradicted": 1.0,
+          "insufficient": 1.0
+        }
+      },
+      "numeric": {
+        "n": 3,
+        "correct": 2,
+        "abstentions": 0,
+        "accuracy": 0.6666666666666666,
+        "coverage": 1.0,
+        "selective_accuracy": 0.6666666666666666,
+        "confusion": {
+          "supported": {
+            "supported": 1,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          }
+        },
+        "precision": {
+          "supported": 1.0,
+          "contradicted": 0.5,
+          "insufficient": null
+        },
+        "recall": {
+          "supported": 1.0,
+          "contradicted": 1.0,
+          "insufficient": 0.0
+        }
+      },
+      "scope": {
+        "n": 3,
+        "correct": 3,
+        "abstentions": 0,
+        "accuracy": 1.0,
+        "coverage": 1.0,
+        "selective_accuracy": 1.0,
+        "confusion": {
+          "supported": {
+            "supported": 1,
+            "contradicted": 0,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 0,
+            "abstain": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 1,
+            "abstain": 0
+          }
+        },
+        "precision": {
+          "supported": 1.0,
+          "contradicted": 1.0,
+          "insufficient": 1.0
+        },
+        "recall": {
+          "supported": 1.0,
+          "contradicted": 1.0,
+          "insufficient": 1.0
+        }
+      }
+    }
+  }
+}

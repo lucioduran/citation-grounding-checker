@@ -99,7 +99,7 @@ def run(split: str, output: Path, cache: Path) -> None:
         "paid_api_cost_usd": 0,
         "human_reviews": 0,
         "hashes": {
-            str(p): digest(p)
+            p.as_posix(): digest(p)
             for p in [
                 Path("data/corpus.json"),
                 Path("config/models.json"),
@@ -138,7 +138,7 @@ def verify(path: Path) -> dict:
         Path("config/models.json"),
         *sorted(Path("data/passages").glob("*.txt")),
     ]
-    if report["hashes"] != {str(p): digest(p) for p in paths}:
+    if report["hashes"] != {p.as_posix(): digest(p) for p in paths}:
         raise ValueError("Input hashes changed")
     expected = {(cid, method) for cid in cases for method in ("deterministic", "flan", "nli")}
     seen = set()

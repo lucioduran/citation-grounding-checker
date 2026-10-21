@@ -2,7 +2,9 @@
 
 import importlib.metadata
 import json
+import math
 import platform
+import re
 import subprocess
 import time
 from datetime import UTC, datetime
@@ -118,6 +120,14 @@ def verify(path: Path) -> dict:
     report = json.loads(path.read_text(encoding="utf-8"))
     if report["schema_version"] != 1 or report["split"] not in ("dev", "eval"):
         raise ValueError("Invalid report schema or split")
+    if report["human_reviews"] != 0 or report["paid_api_cost_usd"] != 0:
+        raise ValueError("Unexpected review or cost claims")
+    environment = report["environment"]
+    if any(
+        environment[key] != value
+        for key, value in {"threads": 2, "seed": 1729, "device": "cpu"}.items()
+    ):
+        raise ValueError("Execution settings changed")
     cases = {
         c["id"]: c
         for c in load_corpus(Path("data/corpus.json"), Path.cwd())
@@ -137,6 +147,12 @@ def verify(path: Path) -> dict:
         if key not in expected or key in seen:
             raise ValueError("Unexpected or duplicate prediction")
         seen.add(key)
+        if (
+            not isinstance(row["seconds"], (int, float))
+            or not math.isfinite(row["seconds"])
+            or row["seconds"] < 0
+        ):
+            raise ValueError("Invalid duration")
         case = cases[row["id"]]
         if any(row[k] != v for k, v in case.items()):
             raise ValueError("Case evidence changed")
@@ -164,4 +180,9 @@ def verify(path: Path) -> dict:
     for method, evidence in report["models"].items():
         if evidence["spec"] != specs()[method] or "model.safetensors" not in evidence["files"]:
             raise ValueError("Invalid model provenance")
+        if any(
+            not isinstance(value, str) or not re.fullmatch(r"[0-9a-f]{64}", value)
+            for value in evidence["files"].values()
+        ):
+            raise ValueError("Invalid model file hash")
     return {"verified": True, "predictions": len(seen), "split": report["split"]}

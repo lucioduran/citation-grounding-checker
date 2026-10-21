@@ -52,6 +52,10 @@ class ExperimentTests(unittest.TestCase):
         original = json.loads(self.report.read_text())
         mutations = [
             lambda r: r.update(schema_version=2),
+            lambda r: r.update(human_reviews=10),
+            lambda r: r["environment"].update(threads=8),
+            lambda r: r["rows"][0].update(seconds=-1),
+            lambda r: r["models"]["nli"]["files"].update(other="invalid"),
             lambda r: r.update(hashes={}),
             lambda r: r["rows"].pop(),
             lambda r: r["rows"].append(r["rows"][0]),
